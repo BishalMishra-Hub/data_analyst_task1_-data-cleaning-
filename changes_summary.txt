@@ -1,10 +1,18 @@
 
-Task 1 - Data Cleaning and Preprocessing
+Task 1 – Data Cleaning & Preprocessing
 
-Steps completed:
-1. Removed duplicate rows
-2. Filled missing numeric values (median)
-3. Filled missing categorical values (mode)
-4. Cleaned text columns
-5. Converted date columns to datetime
-6. Renamed columns for consistency
+Detailed Summary of Data Cleaning Steps:
+
+1. Removed duplicate records to eliminate redundancy and ensure that each entry in the dataset represents a unique customer case.
+
+2. Handled missing numeric values by imputing the median of the respective columns. This approach preserves the overall distribution of the data without being overly influenced by outliers.
+
+3. Addressed missing categorical values by filling them with the mode (most frequent category), ensuring consistency and preventing issues during encoding or analysis.
+
+4. Cleaned and standardized all text-based fields by trimming unnecessary whitespace and converting the text to lowercase. This step helps prevent mismatched values caused by inconsistent formatting (e.g., " Married" vs. "married").
+
+5. Converted date-related columns into proper datetime format, enabling accurate time-series analysis, customer tenure calculation, and future feature engineering.
+
+6. Renamed columns using a consistent lowercase and underscore-separated format. This improves readability, eliminates formatting irregularities, and ensures compatibility with Python coding standards during analysis and modeling.
+
+Overall, the dataset has been thoroughly cleaned, standardized, and prepared for exploratory data analysis, visualization, and machine learning workflows.
