@@ -1,93 +1,158 @@
-# 📊 Marketing Campaign — Data Cleaning & Preprocessing  
-**Task 1 | Python • Pandas • Google Colab**
 
-Welcome to the first step of the Marketing Campaign Data Analysis project!  
-This task focuses on transforming the raw dataset into a structured, clean, and analysis-ready version.
+<div align="center">
 
----
+<img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00c6ff&text=Marketing%20Campaign%20Data%20Cleaning&height=150&fontSize=50&desc=Task%201%20-%20Data%20Cleaning%20and%20Preprocessing&descAlignY=75&descAlign=50" />
 
-## 🚀 Project Overview  
-The goal of this task was to clean, format, and standardize the **marketing_campaign.csv** dataset so that it’s fully prepared for further **EDA, modelling, and visualization**.
-
-This process included handling missing values, fixing inconsistent data, converting data types, renaming columns, and generating output files.
+### 🧼 **Data Cleaning & Preprocessing — Marketing Campaign Dataset**
+#### *Python • Pandas • Google Colab*
 
 ---
 
-## 📁 Dataset  
-**File:** `marketing_campaign.csv`  
-**Rows:** 2240  
-**Columns:** 28+  
-**Source:** Provided as part of the marketing analytics task.
+<img src="https://img.shields.io/badge/Domain-Data%20Cleaning-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Dataset-Marketing%20Campaign-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Python-3.9+-yellow?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Pandas-Library-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Google%20Colab-Notebook-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+
+</div>
 
 ---
 
-## 🛠 Tools & Libraries  
-- **Python**  
-- **Pandas**  
+# 📊 Overview  
+
+This repository contains **Task 1** of the Marketing Campaign Analytics pipeline —  
+a complete **data cleaning and preprocessing workflow** performed on the `marketing_campaign.csv` dataset.
+
+The objective was to convert raw, inconsistent, messy data into a **fully structured, readable, machine-learning-ready** dataset.
+
+This cleaned dataset will be used in the upcoming steps of the full marketing analytics project:
+- Exploratory Data Analysis (EDA)
+- Machine Learning Modelling
+- Customer Segmentation
+- Campaign Optimization Insights
+
+---
+
+# 📁 Dataset Information  
+
+| Attribute | Details |
+|----------|---------|
+| **File Name** | `marketing_campaign.csv` |
+| **Rows** | 2240 |
+| **Columns** | 28+ |
+| **Source** | Provided as part of the Marketing Analytics task |
+
+---
+
+# 🛠 Tools & Libraries Used  
+
+- **Python 3.9+**
+- **Pandas**
+- **NumPy**
 - **Google Colab**
 
 ---
 
-## 🔍 Steps Performed (Detailed & Interactive)
+# 🔍 Step-by-Step Workflow  
 
-### ✅ 1. Loaded Dataset  
-- Read the CSV file into a pandas DataFrame.  
-- Printed dataset shape, missing values, and duplicate count.
+## ✅ 1. Loaded and Inspected Dataset  
+- Loaded CSV using pandas  
+- Viewed column info, missing values, duplicates  
+- Understood column distributions  
 
-### 🧹 2. Removed Duplicate Records  
-Ensures accuracy and eliminates repeated data that may distort results.
+---
 
-### 🧮 3. Handled Missing Values  
-- **Numeric columns** → Replaced missing values using **median**  
-- **Categorical columns** → Filled missing values using **mode**  
+## 🧹 2. Removed Duplicate Records  
+Eliminated repeated entries to ensure data accuracy.
 
-This prevents model bias and keeps numeric distribution stable.
+---
 
-### 📝 4. Cleaned Text Data  
-- Trimmed spaces  
+## 🧮 3. Handled Missing Values  
+- **Numeric Columns** → Filled using **median**  
+- **Categorical Columns** → Filled using **mode**  
+
+Ensures stable modeling and prevents null-related errors.
+
+---
+
+## 📝 4. Cleaned and Standardized Text Columns  
+- Trimmed leading/trailing spaces  
 - Converted all text to lowercase  
+- Standardized categorical entries  
 
-Standardizes inconsistent inputs such as `" Married"` and `"married"`.
+Example:  
+`" Married"` → `"married"`
 
-### 📅 5. Converted Date Columns  
-Converted `Dt_Customer` into proper `datetime` format for correct time-based analysis.
+---
 
-### 🔢 6. Converted Numeric Columns  
-Applied `pd.to_numeric()` to ensure every numeric feature is machine-learning friendly.
+## 📅 5. Converted Date Columns  
+Converted important date fields (e.g., `Dt_Customer`) into proper **datetime** format.
 
-### ✨ 7. Renamed Columns  
-- Converted column names to lowercase  
+---
+
+## 🔢 6. Converted Numeric Columns  
+Used `pd.to_numeric()` to fix object-type numeric values.
+
+---
+
+## ✨ 7. Renamed Columns for Consistency  
+- Lowercased column names  
 - Replaced spaces with underscores  
 
-Improves readability and prevents errors during EDA or model pipeline creation.
+Easier to use during modeling and analysis.
 
 ---
 
-## 📦 Output Files  
-| File Name | Description |
-|-----------|-------------|
-| `cleaned_marketing_campaign.csv` | Fully cleaned dataset |
-| `changes_summary.txt` | Summary of all data-cleaning steps applied |
+# 📦 Output Files  
+
+| File | Description |
+|------|-------------|
+| **`cleaned_marketing_campaign.csv`** | Final processed dataset |
+| **`changes_summary.txt`** | Logs of cleaning decisions |
 
 ---
 
-## 📘 Code Notebook  
-Full Python code used in Google Colab is available inside this repository:  
-> **colab_notebook_bishal1.ipynb**
+# 📘 Notebook  
 
-The notebook includes:  
-- Code cells  
-- Output logs  
-- Automated downloading of processed files  
-- Step-by-step cleaning workflow
+The complete step-by-step implementation is available in:
+
+👉 **`colab_notebook_bishal1.ipynb`**
+
+It includes:
+- Cleaning code  
+- Logs  
+- Screenshots  
+- Saved output files  
+
+---
+
+# 📈 Final Outcome  
+
+After cleaning, the dataset is now:
+
+✔ Free from duplicates  
+✔ Missing values handled  
+✔ Clean column names  
+✔ Proper datatypes  
+✔ Standardized categories  
+✔ Ready for EDA, modeling, and dashboards  
+
+This ensures a strong foundation for deeper analytics.
 
 ---
 
-## 📈 Outcome  
-The dataset is now **clean**, **consistent**, and **analysis-ready** — making it suitable for:  
-- Exploratory Data Analysis  
-- Machine Learning  
-- Visualization  
-- Dashboard building
+# 👨‍💻 Author  
+
+**✦ Bishal Kumar Mishra**  
+*Aspiring Data Analyst | Data Engineer | ML Enthusiast*
+
+If this project helped you, please ⭐ star the repo!
 
 ---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00c6ff&text=Thank%20You!&height=120&fontSize=45" />
+
+</div>
