@@ -1,7 +1,6 @@
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00c6ff&text=Marketing%20Campaign%20Data%20Cleaning&height=150&fontSize=50&desc=Task%201%20-%20Data%20Cleaning%20and%20Preprocessing&descAlignY=75&descAlign=50" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0072ff,100:00c6ff&height=200&section=header&text=Marketing%20Campaign%20Data%20Cleaning&fontSize=45&fontColor=ffffff&animation=fadeIn" />
 
 ### 🧼 **Data Cleaning & Preprocessing — Marketing Campaign Dataset**
 #### *Python • Pandas • Google Colab*
